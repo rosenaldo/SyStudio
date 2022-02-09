@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const URI = '';
 
 const env = process.env.NODE_ENV || 'dev';
-let options = {};  
+let options = {};
+
 mongoose.connect('mongodb://localhost:27017/systudio');
 
 mongoose.set('useNewUrlParser', true);
